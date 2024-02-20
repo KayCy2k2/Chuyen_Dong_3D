@@ -19,29 +19,15 @@ glLoadIdentity()
 gluPerspective(45, (viewport[0] / viewport[1]), 0.1, 50.0)
 glMatrixMode(GL_MODELVIEW)
 
-# Góc quay của khối cầu thứ nhất theo các trục x, y, z
-angles1 = [1, 0, 0]
 
-# Tốc độ quay của khối cầu thứ nhất
-rotation_speed1 = 1
-
-# Tọa độ điểm trung tâm quay của khối cầu thứ nhất
-rotation_center1 = [0.0, 0.0, 0.0]
-
-# Khoảng cách từ tâm đến điểm trung tâm quay của khối cầu thứ nhất
-distance_from_center1 = 5.0
-
-# Góc quay của khối cầu thứ hai theo các trục x, y, z
-angles2 = [0, 1, 0]
-
-# Tốc độ quay của khối cầu thứ hai
-rotation_speed2 = 1
-
-# Tọa độ điểm trung tâm quay của khối cầu thứ hai
-rotation_center2 = [0.0, 0.0, 0.0]
-
-# Khoảng cách từ tâm khối cầu thứ nhất đến tâm khối cầu thứ hai
-distance_between_spheres = 3.0
+angles1 = [1, 0, 0]                                        # Góc quay của khối cầu thứ nhất theo các trục x, y, z
+rotation_speed1 = 1                                        # Tốc độ quay của khối cầu thứ nhất
+rotation_center1 = [0.0, 0.0, 0.0]                         # Tọa độ điểm trung tâm quay của khối cầu thứ nhất
+distance_from_center1 = 5.0                                # Khoảng cách từ tâm đến điểm trung tâm quay của khối cầu thứ nhất
+angles2 = [0, 1, 0]                                        # Góc quay của khối cầu thứ hai theo các trục x, y, z
+rotation_speed2 = 1                                        # Tốc độ quay của khối cầu thứ hai
+rotation_center2 = [0.0, 0.0, 0.0]                         # Tọa độ điểm trung tâm quay của khối cầu thứ hai
+distance_between_spheres = 3.0                             # Khoảng cách từ tâm khối cầu thứ nhất đến tâm khối cầu thứ hai
 
 # Vẽ khối cầu dạng lưới
 def draw_sphere(radius=1, slices=16, stacks=16):
