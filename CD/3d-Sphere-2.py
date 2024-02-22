@@ -11,7 +11,7 @@ pygame.display.set_caption("Snake")
 
 glClearColor(1.0, 1.0, 1.0, 1.0)                            # Thiết lập màu nền thành màu đen
 glEnable(GL_DEPTH_TEST)                                     # Bật chức năng kiểm tra độ sâu
-#glEnable(GL_LIGHTING)                                       # Bật ánh sáng
+#glEnable(GL_LIGHTING)                                      # Bật ánh sáng
 glEnable(GL_LIGHT0)                                         # Bật nguồn sáng thứ nhất
 glMatrixMode(GL_PROJECTION)                                 # Chọn ma trận chiếu
 glLoadIdentity()                                            # Đặt lại ma trận chiếu
@@ -21,18 +21,18 @@ glMatrixMode(GL_MODELVIEW)                                  # Chọn ma trận m
 BLACK = (0, 0, 0)
 
 a, b, c = 0, 0, 0
-angles = [a, b, c]          # Góc quay của khối cầu theo các trục x, y, z
+angles = [a, b, c]             # Góc quay của khối cầu theo các trục x, y, z
 q, w, s = 1, 0, 0
-rotation_center = [q, w, s] # Tọa độ điểm trung tâm quay
-rotation_speed = 1          # Tốc độ quay của khối cầu
-distance_from_center = 5.0  # Khoảng cách từ tâm đến điểm trung tâm quay
-distance_from_center1 = 0   # Khoảng cách từ tâm sang trái/phải
-distance_from_center2 = 0   # Khoảng cách từ tâm đi lên/xuống
-radius = 1                  # Bán kính lưới
-slices = 16                 # Số lát cắt theo đường kinh tuyến
-stacks = 16                 # Số lát cắt theo đường vĩ tuyến
+rotation_center = [q, w, s]    # Tọa độ điểm trung tâm quay
+rotation_speed = 1             # Tốc độ quay của khối cầu
+distance_from_center = 5.0     # Khoảng cách từ tâm đến điểm trung tâm quay
+distance_from_center1 = 0      # Khoảng cách từ tâm sang trái/phải
+distance_from_center2 = 0      # Khoảng cách từ tâm đi lên/xuống
+radius = 1                     # Bán kính lưới
+slices = 16                    # Số lát cắt theo đường kinh tuyến
+stacks = 16                    # Số lát cắt theo đường vĩ tuyến
 mode = 0
-scale_factor = 0.5  # Kích thước nhân với hệ số này
+scale_factor = 0.5             # Kích thước nhân với hệ số này
  
 # Vẽ khối cầu dạng lưới
 def draw_sphere():
