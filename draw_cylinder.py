@@ -59,7 +59,7 @@ def draw_cylinder(radius=1, height=1, slices=16):
 
     # Vẽ hai mặt đáy
     draw_circle(radius, slices, -height / 2)
-    draw_circle(radius, slices,  height / 3)
+    draw_circle(radius, slices,  height / 2)
 
 # Vòng lặp chính
 running = True
